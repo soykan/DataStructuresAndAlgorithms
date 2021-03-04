@@ -35,7 +35,7 @@ class Queue:
           
     def que_rear(self): 
         if self.is_empty(): 
-            print('Queue is empty') 
+            print('Kuyruk boş.') 
         print('Son eleman: ',  self.Q[self.rear]) 
   
 
