@@ -101,8 +101,6 @@ binaryTree *sil(binaryTree *agacKok, int silinecek) {
 }
 
 int main() {
-    binaryTree *bt = malloc(sizeof(binaryTree));
-
     binaryTree *bt1 = malloc(sizeof(binaryTree));
     bt1->bilgi = 1;
     strcpy(bt1->mesaj, "Merhaba");
@@ -124,11 +122,10 @@ int main() {
     listele(kok);
 
     binaryTree *bulunan = malloc(sizeof(binaryTree));
-
     bulunan = ara(kok, 2);
     printf("Bulunan -> %d: %s\n", bulunan->bilgi, bulunan->mesaj);
+    
     sil(kok, 3);
-
     printf("Silme işlemi sonrası listeleme:\n");
     listele(kok);
     return 0;
